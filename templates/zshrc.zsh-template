@@ -75,7 +75,7 @@ docker
 docker-compose
 docker-machine
 ansible
-virtualenvwrapper
+#virtualenvwrapper
 
 lxd
 
@@ -86,7 +86,7 @@ colorize
 repo
 
 kubectl
-kubectx
+#kubectx
 kops
 helm
 minikube
@@ -136,7 +136,7 @@ adb
 rsync 
 systemadmin
 
-tmux 
+#tmux 
 tmux-cssh 
 )
 
