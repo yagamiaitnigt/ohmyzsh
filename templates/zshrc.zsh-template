@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="candy"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -68,7 +68,78 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git repo github firewalld command-not-found cp postgres docker docker-compose npm vi-mode docker-machine vim-interaction systemd sudo python pip node nmap mosh man globalias django ubuntu cp aws adb rsync systemadmin tmux tmux-cssh ufw)
+plugins=(git
+github 
+
+docker 
+docker-compose
+docker-machine
+ansible
+virtualenvwrapper
+
+lxd
+
+#zsh-syntacsis-hylay
+
+sudo
+colorize
+repo
+
+kubectl
+kubectx
+kops
+helm
+minikube
+microk8s
+
+firewalld 
+ufw
+systemd
+history
+globalias
+command-not-found 
+cp
+fzf
+extract
+
+autoenv
+
+man
+colored-man-pages
+
+postgres 
+jsontools
+
+npm
+
+vi-mode 
+vim-interaction 
+
+python
+pyenv
+pip
+pipenv
+django
+
+node 
+nmap 
+mosh 
+
+ 
+ 
+ubuntu 
+archlinux
+
+
+aws 
+adb 
+rsync 
+systemadmin
+
+tmux 
+tmux-cssh 
+)
+
 
 source $ZSH/oh-my-zsh.sh
 
