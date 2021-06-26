@@ -99,7 +99,7 @@ history
 globalias
 command-not-found 
 cp
-fzf
+#fzf
 extract
 
 #autoenv
