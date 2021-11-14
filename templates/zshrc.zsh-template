@@ -97,6 +97,10 @@ plugins=(
   repo
   compleat
 
+  #Print date
+  isodate #isodate isodate_basic isodate_utc date_locale
+
+  #for Kubernetes
   kubectl
   #kubectx
   kops
@@ -107,7 +111,7 @@ plugins=(
   firewalld
   ufw
   systemd
-  history
+  history #alias h hs hsi
   globalias
   command-not-found
   cp
