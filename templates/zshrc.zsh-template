@@ -69,77 +69,80 @@ ZSH_THEME="candy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-github 
+  github
+  vagrant
+  vagrant-promt
+  terraform
 
-docker 
-docker-compose
-docker-machine
-ansible
-#virtualenvwrapper
+  docker
+  docker-compose
+  docker-machine
+  ansible
+  #virtualenvwrapper
 
-lxd
+  lxd
 
-#zsh-syntacsis-hylay
+  #zsh-syntacsis-hylay
 
-sudo
-colorize
-repo
+  sudo
+  colorize
+  repo
 
-kubectl
-#kubectx
-kops
-helm
-minikube
-microk8s
+  kubectl
+  #kubectx
+  kops
+  helm
+  minikube
+  microk8s
 
-firewalld 
-ufw
-systemd
-history
-globalias
-command-not-found 
-cp
-#fzf
-extract
+  firewalld
+  ufw
+  systemd
+  history
+  globalias
+  command-not-found
+  cp
+  #fzf
+  extract
 
-#autoenv
+  #autoenv
 
-man
-colored-man-pages
+  man
+  colored-man-pages
 
-postgres 
-jsontools
+  postgres
+  jsontools
 
-npm
+  npm
 
-vi-mode 
-vim-interaction 
+  vi-mode
+  vim-interaction
 
-python
-pyenv
-pip
-pipenv
-django
+  python
+  pyenv
+  pip
+  pipenv
+  django
 
-node 
-nmap 
-mosh 
+  node
+  nmap
+  mosh
 
- 
- 
-ubuntu 
-archlinux
+  \
+  \
+  ubuntu
+  archlinux
 
+  \
+  aws
+  adb
+  rsync
+  systemadmin
 
-aws 
-adb 
-rsync 
-systemadmin
-
-#tmux 
-tmux-cssh 
+  tmux
+  screen
+  tmux-cssh
 )
-
 
 source $ZSH/oh-my-zsh.sh
 
