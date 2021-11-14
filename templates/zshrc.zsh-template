@@ -73,17 +73,21 @@ plugins=(
   alias-finder
   autoenv
 
+  #DevOps utils,optional
   git
   github
+  ansible
   vagrant
   vagrant-promt
   terraform
   aws
+  doctl #DigitalOcean API
 
+  #Docker optonal
   docker
   docker-compose
   docker-machine
-  ansible
+
   #virtualenvwrapper
 
   lxd
@@ -132,9 +136,15 @@ plugins=(
   nmap
   mosh
 
+  #Ubuntu and Debian,optional
+  #debian
   ubuntu
   #Optional for arhclinux,aliases
   #archlinux
+
+  #Centos optional
+  #yum
+  #dnf
 
   adb
   rsync
