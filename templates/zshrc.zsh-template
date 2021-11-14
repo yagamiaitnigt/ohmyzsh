@@ -80,17 +80,24 @@ plugins=(
   vagrant
   vagrant-promt
   terraform
+  nomad #Hashicorp for easily deploy applications
+  vault
+  oc #OpenShift CLI
   aws
-  doctl #DigitalOcean API
+  doctl   #DigitalOcean API
+  tugboat #ommand line tool for interacting with your DigitalOcean droplets
 
   #Docker optonal
   docker
   docker-compose
   docker-machine
+  scw
 
-  #virtualenvwrapper
+  \
+  virtualenv
 
   lxd
+  salt
 
   sudo
   colorize
@@ -107,10 +114,11 @@ plugins=(
   helm
   minikube
   microk8s
+  svcat
 
   firewalld
   ufw
-  systemd
+  systemd #sc-list-units	sc-is-active	sc-status	sc-show	sc-is-enabled
   history #alias h hs hsi
   globalias
   command-not-found
@@ -121,24 +129,39 @@ plugins=(
   man
   colored-man-pages
 
-  postgres
+  #DataBase
+  mongocli  #MongoDb
+  postgres  #Postgresql
+  redis-cli #Redis-CLI
   jsontools
-
-  npm
 
   vi-mode
   vim-interaction
+  Vundle #управления менеджером плагинов
 
+  #Python
+  pep8
   autopep8
   python
   pyenv
   pip
   pipenv
-  django
+  #django
+  pylint
+  #virtualenvwrapper
 
-  node
-  nmap
+  #Node.js
+  node # node -docs
+  npm
+  nvm #менеджер версий Node.js
+  ionic
+  #npx
+
+  nmap #nmap_open_ports nmap_slow nmap_list_interfaces nmap_fast
   mosh
+  ssh-agent
+
+  supervisor
 
   #Ubuntu and Debian,optional
   #debian
@@ -148,15 +171,24 @@ plugins=(
 
   #Centos optional
   #yum
+  #Fedora
   #dnf
 
   adb
   rsync
-  systemadmin
+  systemadmin # clr path mkdir psmem10 pscpu10 hist10
+  encode64    # e64 d64
+  urltools    # urldecode  urlencode
 
   tmux
   screen
   tmux-cssh
+
+  vscode   #VSC
+  themes   #shange themes ;lstheme theme
+  transfer #сервис обмена файлами из командной строки
+
+  zsh-interactive-cd
 
   zsh-autosuggestions
   zsh-syntax-highlighting
