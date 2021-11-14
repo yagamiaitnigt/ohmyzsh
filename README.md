@@ -20,66 +20,11 @@ Oh My Zsh comes with a shitload of plugins for you to take advantage of. You can
 
 ### Themes
 
-We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred and fifty themes now bundled. Most of them have [screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) on the wiki (We are working on updating this!). Check them out!
-
-#### Selecting a Theme
-
-_Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
-
-Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
-
-```shell
-ZSH_THEME="robbyrussell"
-```
-
-To use a different theme, simply change the value to match the name of your desired theme. For example:
-
-```shell
-ZSH_THEME="agnoster" # (this is one of the fancy ones)
-# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
-```
-
-_Note: many themes require installing the [Powerline Fonts](https://github.com/powerline/fonts) in order to render properly._
-
-Open up a new terminal window and your prompt should look something like this:
-
-![Agnoster theme](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
-
-In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes).
-
-If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
-
-```shell
-ZSH_THEME="random" # (...please let it be pie... please be some pie..)
-```
-
-And if you want to pick random theme from a list of your favorite themes:
-
-```shell
-ZSH_THEME_RANDOM_CANDIDATES=(
-  "robbyrussell"
-  "agnoster"
-)
-```
-
-If you only know which themes you don't like, you can add them similarly to a blacklist:
-
-```shell
-ZSH_THEME_RANDOM_BLACKLIST=(pygmalion tjkirch_mod)
-```
+[screenshots](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
 ### FAQ
 
-If you have some more questions or issues, you might find a solution in our [FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
-
-## Advanced Topics
-
-If you're the type that likes to get their hands dirty, these sections might resonate.
-
-### Advanced Installation
-
-Some users may want to manually install Oh My Zsh, or change the default path or other settings that
-the installer accepts (these settings are also documented at the top of the install script).
+[FAQ](https://github.com/ohmyzsh/ohmyzsh/wiki/FAQ).
 
 #### Custom Directory
 
@@ -155,57 +100,6 @@ chsh -s $(which zsh)
 ```
 
 You must log out from your user session and log back in to see this change.
-
-##### 5. Initialize your new zsh configuration
-
-Once you open up a new terminal window, it should load zsh with Oh My Zsh's configuration.
-
-### Installation Problems
-
-If you have any hiccups installing, here are a few common fixes.
-
-- You _might_ need to modify your `PATH` in `~/.zshrc` if you're not able to find some commands after
-  switching to `oh-my-zsh`.
-- If you installed manually or changed the install location, check the `ZSH` environment variable in
-  `~/.zshrc`.
-
-### Custom Plugins and Themes
-
-If you want to override any of the default behaviors, just add a new file (ending in `.zsh`) in the `custom/` directory.
-
-If you have many functions that go well together, you can put them as a `XYZ.plugin.zsh` file in the `custom/plugins/` directory and then enable this plugin.
-
-If you would like to override the functionality of a plugin distributed with Oh My Zsh, create a plugin of the same name in the `custom/plugins/` directory and it will be loaded instead of the one in `plugins/`.
-
-## Getting Updates
-
-By default, you will be prompted to check for upgrades every few weeks. If you would like `oh-my-zsh` to automatically upgrade itself without prompting you, set the following in your `~/.zshrc`:
-
-```shell
-DISABLE_UPDATE_PROMPT=true
-```
-
-To disable automatic upgrades, set the following in your `~/.zshrc`:
-
-```shell
-DISABLE_AUTO_UPDATE=true
-```
-
-### Manual Updates
-
-If you'd like to upgrade at any point in time (maybe someone just released a new plugin and you don't want to wait a week?) you just need to run:
-
-```shell
-upgrade_oh_my_zsh
-```
-
-Magic! 🎉
-
-## Uninstalling Oh My Zsh
-
-Oh My Zsh isn't for everyone. We'll miss you, but we want to make this an easy breakup.
-
-If you want to uninstall `oh-my-zsh`, just run `uninstall_oh_my_zsh` from the command-line. It will remove itself and revert your previous `bash` or `zsh` configuration.
 
 ## How do I contribute to Oh My Zsh?
 
