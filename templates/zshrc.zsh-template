@@ -142,6 +142,8 @@ plugins=(git
   tmux
   screen
   tmux-cssh
+
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
