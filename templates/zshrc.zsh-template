@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/home/yagami/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -19,11 +19,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 #awesomepanda
 #aussiegeek
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,7 +49,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -80,21 +75,21 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
  # aliases
  # alias-finder
-  autoenv
+  #autoenv
 
   #DevOps utils,optional
   git
   github
   ansible
   vagrant
-  vagrant-promt
+  #vagrant-promt
   terraform
-  nomad #Hashicorp for easily deploy applications
-  vault
-  oc #OpenShift CLI
-  aws
-  doctl   #DigitalOcean API
-  tugboat #ommand line tool for interacting with your DigitalOcean droplets
+  #nomad #Hashicorp for easily deploy applications
+  #vault
+  #oc #OpenShift CLI
+  #aws
+  #doctl   #DigitalOcean API
+  #tugboat #ommand line tool for interacting with your DigitalOcean droplets
 
   #Docker optonal
   docker
@@ -102,7 +97,6 @@ plugins=(
   docker-machine
   scw
 
-  \
   virtualenv
 
   lxd
@@ -114,7 +108,7 @@ plugins=(
   compleat
 
   #Print date
-  isodate #isodate isodate_basic isodate_utc date_locale
+  #isodate #isodate isodate_basic isodate_utc date_locale
 
   #for Kubernetes
   kubectl
@@ -127,7 +121,7 @@ plugins=(
 
   firewalld
   ufw
-  systemd #sc-list-units	sc-is-active	sc-status	sc-show	sc-is-enabled
+  systemd #sc-list-units        sc-is-active    sc-status       sc-show sc-is-enabled
   history #alias h hs hsi
   globalias
   command-not-found
@@ -139,14 +133,14 @@ plugins=(
   colored-man-pages
 
   #DataBase
-  mongocli  #MongoDb
+  #mongocli  #MongoDb
   postgres  #Postgresql
-  redis-cli #Redis-CLI
+  #redis-cli #Redis-CLI
   jsontools
 
   vi-mode
   vim-interaction
-  Vundle #управления менеджером плагинов
+  #Vundle #управления менеджером плагинов
 
   #Python
   pep8
@@ -168,15 +162,14 @@ plugins=(
 
   nmap #nmap_open_ports nmap_slow nmap_list_interfaces nmap_fast
   mosh
-  ssh-agent
 
   supervisor
 
   #Ubuntu and Debian,optional
   #debian
-  ubuntu
+  #ubuntu
   #Optional for arhclinux,aliases
-  #archlinux
+  archlinux
 
   #Centos optional
   #yum
@@ -189,7 +182,7 @@ plugins=(
   encode64    # e64 d64
   urltools    # urldecode  urlencode
 
-  tmux
+  #tmux
   screen
   tmux-cssh
 
@@ -201,6 +194,9 @@ plugins=(
 
   zsh-autosuggestions
   zsh-syntax-highlighting
+  zsh-autoquoter
+  fast-syntax-highlighting
+  zsh-fzf-history-search
 )
 
 source $ZSH/oh-my-zsh.sh
